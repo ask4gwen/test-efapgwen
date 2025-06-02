@@ -1,23 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio Dyade - Cours de Danse Classique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="navbar">
-    <img src="images/logo.png" class="logo">
-    <div class="links">
-      <a href="" class="link">Présentation</a>
-      <a href="" class="link">Carte</a>
-      <a href="https://www.efap.com/" class="link" target="_blank" > EFAP </a>
+
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#calendrier">Calendrier</a></li>
+        <li><a href="#cours">Cours</a></li>
+        <li><a href="#equipe">L'équipe</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-image">
+      <img src="ballerine-1.png" alt="Ballerine 1" />
     </div>
-  </div>
-  <div>
-    <div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.3537719269!2d-74.05163165714815!3d40.75903219763938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20%C3%89tat%20de%20New%20York%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1745401033450!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe id="maps"></div> 
-  </div>
-  <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/jjCDAroAWPk?si=Mkbw_GY4BsqRf_nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  </header>
+
+  <section id="accueil" class="studio-title">
+    <h1>STUDIO DYADE</h1>
+  </section>
+
+  <section id="presentation" class="presentation">
+    <div class="presentation-left">
+      <img src="ballerine-2.png" alt="Ballerine 2" />
+    </div>
+    <div class="presentation-right">
+      <p>
+        Nous sommes le Studio Dyade. <strong>DANSONS, MAINTENANT !</strong><br /><br />
+        Notre mission est de créer une communauté à travers la danse. Le Studio Rotate propose des espaces spécialement conçus pour se mouvoir, <strong>CRÉER</strong> et se réunir.<br />
+        Nous nous inscrivons dans la diversité et le body positive : tous les athlètes sont les bienvenus.
+      </p>
+      <a href="#calendrier" class="btn-link">Voir le calendrier</a>
+    </div>
+  </section>
+
+  <section class="image-full">
+    <img src="ballerine-3.png" alt="Ballerine 3" />
+  </section>
+
+  <section class="force-mouvement">
+    <h2>
+      Dans notre entreprise dirigée par une femme,<br />
+      nous croyons au développement de la <strong>FORCE</strong> par le <strong>MOUVEMENT</strong>
+    </h2>
+  </section>
+
+  <section class="voir-cours">
+    <div class="image-overlay">
+      <img src="ballerine-4.png" alt="Ballerine 4" />
+      <a href="#cours" class="overlay-button">VOIR LES COURS</a>
+    </div>
+  </section>
+
+  <section id="cours" class="cours-section">
+    <div class="cours-text">
+      <h3>La danse classique</h3>
+      <p>
+        La danse classique est un art exigeant mêlant discipline, grâce et technique. Elle forge le corps et l'esprit en harmonie, développant force, souplesse et expression artistique.
+      </p>
+    </div>
+    <div class="cours-image">
+      <img src="ballerine-5.png" alt="Ballerine 5" />
+    </div>
+  </section>
+
+  <section id="calendrier" class="calendrier-fictif">
+    <h3>Calendrier des cours</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Jour</th>
+          <th>Heure</th>
+          <th>Niveau</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Lundi</td><td>17h - 18h30</td><td>Débutants</td></tr>
+        <tr><td>Mardi</td><td>18h - 19h30</td><td>Intermédiaires</td></tr>
+        <tr><td>Mercredi</td><td>15h - 16h30</td><td>Enfants</td></tr>
+        <tr><td>Jeudi</td><td>19h - 20h30</td><td>Adultes</td></tr>
+        <tr><td>Samedi</td><td>10h - 12h</td><td>Avancés</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="video-section">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/077BgT3h6As?si=fD9fNjOyUM5TCQZ6"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </section>
+
+  <!-- NOUVELLE SECTION EQUIPE -->
+  <section id="equipe" class="equipe-section">
+    <h3>L'équipe pédagogique</h3>
+    <div class="equipe-list">
+      <div class="membre">
+        <img src="Marie.jpg" alt="Professeur 1" />
+        <h4>Marie Dupont</h4>
+        <p>Professeure principale, spécialisée en danse classique.</p>
+      </div>
+      <div class="membre">
+        <img src="paul.jpg" alt="Professeur 2" />
+        <h4>Paul Martin</h4>
+        <p>Coach de technique et préparation physique.</p>
+      </div>
+      <div class="membre">
+        <img src="contempo.jpg" alt="Professeur 3" />
+        <h4>Anna Lemoine</h4>
+        <p>Spécialiste danse contemporaine.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOUVELLE SECTION GALERIE -->
+  <section id="galerie" class="galerie-section">
+    <h3>Galerie photos</h3>
+    <div class="galerie-grid">
+      <img src="galeriephoto1.jpg" alt="Photo danse 1" />
+      <img src="galeriephoto2.jpg" alt="Photo danse 2" />
+      <img src="galeriephoto4.jpg" alt="Photo danse 3" />
+      <img src="galeriephoto5.jpg" alt="Photo danse 4" />
+      <img src="galeriephoto6.jpg" alt="Photo danse 5" />
+    </div>
+  </section>
+
+  <section id="temoignages" class="temoignages-section">
+    <h3>Témoignages</h3>
+    <blockquote>
+      <p>"Le Studio Dyade m'a donné confiance en moi et une passion nouvelle pour la danse."</p>
+      <cite>- Sophie, élève avancée</cite>
+    </blockquote>
+    <blockquote>
+      <p>"Une équipe formidable et un enseignement de qualité."</p>
+      <cite>- Julien, parent d'élève</cite>
+    </blockquote>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h3>Contactez-nous</h3>
+    <p>Email : <a href="mailto:contact@studiodyade.fr">contact@studiodyade.fr</a></p>
+    <form action="#" method="post" class="contact-form">
+      <label for="name">Nom</label><br />
+      <input type="text" id="name" name="name" required /><br />
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="message">Message</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea><br />
+      <button type="submit" class="btn-link">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Studio Dyade - Tous droits réservés</p>
+  </footer>
+
 </body>
 </html>
